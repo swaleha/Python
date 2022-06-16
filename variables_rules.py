@@ -10,6 +10,10 @@ a = b = c = 20
 print(a, b, c)
 print(cars,_cars,CARS,cars2)
 
+"""
+String formatting
+"""
+
 print("{}, programming is very good for beginners.".format("Python"))
 
 str1 = "This code is written in {}"
