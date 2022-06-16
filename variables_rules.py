@@ -9,3 +9,9 @@ print(variable_name)
 a = b = c = 20
 print(a, b, c)
 print(cars,_cars,CARS,cars2)
+
+print("{}, programming is very good for beginners.".format("Python"))
+
+str1 = "This code is written in {}"
+print(str1.format("Python"))
+print("My program is {} day old".format(1))
