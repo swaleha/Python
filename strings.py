@@ -3,6 +3,7 @@
 String is a sequence of characters
 It contains a-z, 0-9, @
 It is in single or double quotes
+strings are immutable
 
 """
 
