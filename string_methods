@@ -1,0 +1,17 @@
+"""
+Examples to show available string methods in python
+
+"""
+
+# Accessing characters in string
+# index starts from zero
+
+first = "nyc"[0]
+print(first)
+city = "sfo"
+print(city[0])
+
+print(a, b, c)
+print(a, b, c)
+print(a, b, c)
+print(a, b, c)
