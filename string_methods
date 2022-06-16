@@ -11,7 +11,3 @@ print(first)
 city = "sfo"
 print(city[0])
 
-print(a, b, c)
-print(a, b, c)
-print(a, b, c)
-print(a, b, c)
