@@ -1,0 +1,35 @@
+def add():
+    a = float(input("Enter the first number: "))
+    b = float(input("Enter the second number: "))
+    print(a + b)
+
+
+def sub():
+    a = float(input("Enter the first number: "))
+    b = float(input("Enter the second number: "))
+    print( a - b)
+
+
+def mul():
+    a = float(input("Enter the first number: "))
+    b = float(input("Enter the second number: "))
+    print(a * b)
+
+
+def div():
+    a = float(input("Enter the first number: "))
+    b = float(input("Enter the second number: "))
+    print(a / b)
+
+
+operation = input("Please type +, -, *, or / :")
+if operation == '+':
+    add()
+elif operation == '-':
+    sub()
+elif operation == '*':
+    mul()
+elif operation == '/':
+    div()
+else:
+    print("This operation is not available")
