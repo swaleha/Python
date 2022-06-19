@@ -1,3 +1,6 @@
+on = True
+
+
 def add():
     a = float(input("Enter the first number: "))
     b = float(input("Enter the second number: "))
@@ -22,14 +25,17 @@ def div():
     print(a / b)
 
 
-operation = input("Please type +, -, *, or / :")
-if operation == '+':
-    add()
-elif operation == '-':
-    sub()
-elif operation == '*':
-    mul()
-elif operation == '/':
-    div()
-else:
-    print("This operation is not available")
+while on:
+    operation = input("Please type +, -, *, /, or q :")
+    if operation == '+':
+        add()
+    elif operation == '-':
+        sub()
+    elif operation == '*':
+        mul()
+    elif operation == '/': 
+        div()
+    elif operation == 'q':
+        on = False
+    else:
+        print("This operation is not available")
