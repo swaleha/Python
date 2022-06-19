@@ -1,0 +1,37 @@
+"""
+This program demonstrates the use of dictionaries
+"""
+
+
+stuff = {"food":15, "energy": 100, "enemies":3, "friends":10}
+
+print(stuff.get("food"))
+
+print(stuff.items())
+
+print(stuff.keys())
+
+print(stuff.popitem())
+print(stuff.items())
+
+print(stuff.setdefault("food"))
+print(stuff)
+
+print(stuff.setdefault("friends", 123))
+print(stuff)
+
+
+new_items = {"rocks":  3, "arrows": 15}
+stuff.update(new_items)
+print(stuff)
+
+new_items = {"rocks": 5, "arrows": 20}
+stuff.update(new_items)
+print(stuff)
+
+up_new = {"food": 3, "webs": 2}
+stuff.update(up_new)
+print(stuff)
+
+stuff.update(food = 500)
+print(stuff)
