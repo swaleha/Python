@@ -1,6 +1,9 @@
 fruits = ["peaches", "pears", "apples", "apples", "apples"]
 years = [3, "1998", 2.5, 987, "1994"]
 
+length = len(fruits)
+print("Length of list fruits is: ", length)
+
 print(fruits, years)
 fruits.append("oranges")
 print(fruits)
@@ -32,3 +35,8 @@ print(fruits.count("apple"))
 print(fruits.count("apples"))
 
 print(fruits.index('apples'))
+
+slicing = fruits[0:2]
+a = fruits[1:]
+print(slicing)
+print(a)
