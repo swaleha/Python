@@ -4,18 +4,24 @@ Object oriented programming
 
 class Car(object):
 
-    def __init__(self, make, model = '550i'):
+    wheels = 4
+
+    def __init__(self, make, model):
         self.make_car = make
         self.model_car = model
 
+    def info(self):
+        print("Make of the car:" + self.make_car)
+        print("Model of the car:" + self.model_car + "\n")
 
-c1 = Car('bmw')
-print(c1.make_car)
 
-c2 = Car('audi')
-print(c2.make_car)
+c1 = Car('BMW', '550i')
+c1.info()
 
-c3 = Car('benz')
-print(c3.make_car)
 
-print(c1.model_car)
+c2 = Car('Audi', 'Q3')
+c2.info()
+
+
+c3 = Car('Benz', 'E350')
+c3.info()
