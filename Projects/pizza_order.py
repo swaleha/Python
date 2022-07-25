@@ -17,7 +17,7 @@ elif size == 'L':
   bill = 25
   print(f"Large Pizza: ${bill}")
 else:
-  bill += 25
+  bill = 25
 
 if add_pepperoni == 'Y':
   if size == 'S':
