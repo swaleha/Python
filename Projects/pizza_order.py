@@ -5,6 +5,7 @@ add_pepperoni = input("Do you want pepperoni? Y or N: ")
 extra_cheese = input("Do you want extra cheese? Y or N: ")
 # 🚨 Don't change the code above 👆
 
+bill = 0
 #Write your code below this line 👇
 if size == 'S':
   bill = 15
@@ -15,6 +16,8 @@ elif size == 'M':
 elif size == 'L':
   bill = 25
   print(f"Large Pizza: ${bill}")
+else:
+  bill += 25
 
 if add_pepperoni == 'Y':
   if size == 'S':
