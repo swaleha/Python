@@ -30,7 +30,7 @@ print(
     "------------------------------------------------------------------------------"
 )
 choose_direction = input(
-    '''You\'re at a crossroad. Where do you want to go? Type "left or "right": '''
+    '''You\'re at a crossroad. Where do you want to go? Type "left or "right": \n'''
 ).lower()
 
 if choose_direction == "right":
@@ -41,7 +41,7 @@ elif choose_direction == "left":
     )
     choose_path = input(
         '''You\'ve come to a lake. There is an island in the middle of the lake. 
-Type "wait" to wait for a boat or Type "swim" to swim across: ''').lower()
+Type "wait" to wait for a boat or Type "swim" to swim across: \n''').lower()
     if choose_path == "swim":
         print("You're attacked by trout. Game Over")
     elif choose_path == "wait":
@@ -49,7 +49,7 @@ Type "wait" to wait for a boat or Type "swim" to swim across: ''').lower()
             "------------------------------------------------------------------------------"
         )
         choose_door = input(
-            '''You arrive at the island unharmed. There is a house with 3 doors. \nOne red, one yellow and one blue. Which colour do you choose? '''
+            '''You arrive at the island unharmed. There is a house with 3 doors. \nOne red, one yellow and one blue. Which colour do you choose?\n '''
         ).lower()
         if choose_door == "red":
             print("The room is full of fire. Game Over!")
