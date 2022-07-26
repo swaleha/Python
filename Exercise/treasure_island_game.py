@@ -1,4 +1,3 @@
-
 print('''
 *******************************************************************************
           |                   |                  |                     |
@@ -27,33 +26,40 @@ print("Your mission is to find the treasure.")
 #https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
 #Write your code below this line 👇
-print("------------------------------------------------------------------------------")
-choose_direction = input('''You\'re at a crossroad. Where do you want to go? Type "left or "right": ''')
-direction = choose_direction.lower()
+print(
+    "------------------------------------------------------------------------------"
+)
+choose_direction = input(
+    '''You\'re at a crossroad. Where do you want to go? Type "left or "right": '''
+).lower()
 
-if direction == "right":
-  print("You fell into a hole. Game Over")
+if choose_direction == "right":
+    print("You fell into a hole. Game Over")
 elif choose_direction == "left":
-  print("------------------------------------------------------------------------------")
-  choose_path = input('''You\'ve come to a lake. There is an island in the middle of the lake. 
-Type "wait" to wait for a boat or Type "swim" to swim across: ''')
-  path = choose_path.lower() 
-  if path == "swim":
-    print("You're attacked by trout. Game Over")
-  elif path == "wait":
-    print("------------------------------------------------------------------------------")
-    choose_door = input('''You arrive at the island unharmed. There is a house with 3 doors. \nOne red, one yellow and one blue. Which colour do you choose? ''')
-    door = choose_door.lower()
-    if door == "red":
-      print("The room is full of fire. Game Over!")
-    elif door == "yellow":
-      print("You win!")
-    elif door == "blue":
-      print("You're eaten by beasts. Game Over!")
+    print(
+        "------------------------------------------------------------------------------"
+    )
+    choose_path = input(
+        '''You\'ve come to a lake. There is an island in the middle of the lake. 
+Type "wait" to wait for a boat or Type "swim" to swim across: ''').lower()
+    if choose_path == "swim":
+        print("You're attacked by trout. Game Over")
+    elif choose_path == "wait":
+        print(
+            "------------------------------------------------------------------------------"
+        )
+        choose_door = input(
+            '''You arrive at the island unharmed. There is a house with 3 doors. \nOne red, one yellow and one blue. Which colour do you choose? '''
+        ).lower()
+        if choose_door == "red":
+            print("The room is full of fire. Game Over!")
+        elif choose_door == "yellow":
+            print("You win!")
+        elif choose_door == "blue":
+            print("You're eaten by beasts. Game Over!")
+        else:
+            print("You're attacked by zombies. Game Over!")
     else:
-      print("You're attacked by zombies. Game Over!")
-  else:
-    print("You're attacked by monsters. Game Over!")     
+        print("You're attacked by monsters. Game Over!")
 else:
-  print("You're attacked by dragons. Game Over!")
-
+    print("You're attacked by dragons. Game Over!")
