@@ -6,8 +6,6 @@ name2 = input("What is their name? \n")
 
 #Write your code below this line 👇
 name = name1.lower() + name2.lower()
-total = 0
-love_score = None
 
 t = name.count("t")
 r = name.count("r")
