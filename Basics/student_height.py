@@ -8,7 +8,7 @@ for n in range(0, len(student_heights)):
 number_of_students = 0
 total_height = 0
 for count in student_heights:
-  number_of_students = number_of_students + 1
+  number_of_students += 1
 print(number_of_students)
 
 for student in student_heights:
