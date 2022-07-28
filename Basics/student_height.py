@@ -9,11 +9,11 @@ number_of_students = 0
 total_height = 0
 for count in student_heights:
   number_of_students += 1
-print(number_of_students)
+#print(number_of_students)
 
-for student in student_heights:
-  total_height = total_height + student
-print(total_height)
+for height in student_heights:
+  total_height += height
+#print(total_height)
 
 average = total_height/number_of_students
 print(round(average))
