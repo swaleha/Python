@@ -8,7 +8,7 @@ print(student_scores)
 #Write your code below this row 👇
 highest_score = 0
 for score in student_scores:
-  if score > highest_score:
+  if score > highest_score:  # type: ignore
     highest_score = score
 print(f"The highest score in the class is: {highest_score}")
 
